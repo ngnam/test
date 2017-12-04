@@ -46,7 +46,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-default\" role=\"navigation\">\r\n  <div class=\"container-fluid\">\r\n    <div class=\"navbar-header\">\r\n      <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\".navbar-ex1-collapse\">\r\n        <span class=\"sr-only\">Toggle navigation</span>\r\n        <span class=\"icon-bar\"></span>\r\n        <span class=\"icon-bar\"></span>\r\n        <span class=\"icon-bar\"></span>\r\n      </button>\r\n      <a class=\"navbar-brand\" href=\"#\">\r\n        <img alt=\"Brand\" src=\"/assets/image/logo-avt.png\" width=\"25\" style=\"margin-top: -4px; width: 25px;\"> \r\n      </a>\r\n      <b class=\"navbar-text\">Aventis</b>\r\n    </div>\r\n    <div class=\"collapse navbar-collapse navbar-ex1-collapse\">\r\n      <ul class=\"nav navbar-nav\">\r\n        <li>\r\n          <a routerLink=\"/glaubiger\">Dossiers</a>\r\n        </li>\r\n      </ul>\r\n    </div>\r\n  </div>\r\n</nav>\r\n<div class=\"container-fluid\">\r\n  <div class=\"row\">\r\n    <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\r\n      <router-outlet></router-outlet>\r\n    </div>\r\n  </div>\r\n</div>"
+module.exports = "<nav class=\"navbar navbar-default\" role=\"navigation\">\r\n  <div class=\"container-fluid\">\r\n    <div class=\"navbar-header\">\r\n      <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\".navbar-ex1-collapse\">\r\n        <span class=\"sr-only\">Toggle navigation</span>\r\n        <span class=\"icon-bar\"></span>\r\n        <span class=\"icon-bar\"></span>\r\n        <span class=\"icon-bar\"></span>\r\n      </button>\r\n      <a class=\"navbar-brand\" routerLink=\"\">\r\n        <img alt=\"Brand\" src=\"/assets/image/logo-avt.png\" width=\"25\" style=\"margin-top: -4px; width: 25px;\"> \r\n      </a>\r\n      <b class=\"navbar-text\">Aventis</b>\r\n    </div>\r\n    <div class=\"collapse navbar-collapse navbar-ex1-collapse\">\r\n      <ul class=\"nav navbar-nav\">\r\n        <li>\r\n          <a routerLink=\"/glaubiger\">Dossiers</a>\r\n        </li>\r\n      </ul>\r\n    </div>\r\n  </div>\r\n</nav>\r\n<div class=\"container-fluid\">\r\n  <div class=\"row\">\r\n    <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\r\n      <router-outlet></router-outlet>\r\n    </div>\r\n  </div>\r\n</div>"
 
 /***/ }),
 
@@ -126,7 +126,7 @@ var AppModule = (function () {
                     { path: '', redirectTo: '/glaubiger', pathMatch: 'full' },
                     { path: 'glaubiger', loadChildren: './pages/glaubiger/glaubiger.module#GlaubigerModule' },
                     { path: '**', component: __WEBPACK_IMPORTED_MODULE_8__shareds_components_pageNotFound_pageNotFound_component__["a" /* PageNotFoundComponent */] }
-                ], { useHash: true })
+                ], { useHash: false })
             ],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */]],
             schemas: [__WEBPACK_IMPORTED_MODULE_2__angular_core__["CUSTOM_ELEMENTS_SCHEMA"]]
@@ -279,9 +279,9 @@ var MockDataService = (function () {
             new __WEBPACK_IMPORTED_MODULE_2__models_model_glaubiger__["a" /* GlaubigerModel */](2, 'Ba02', '401', false, 'Muster, Lea(11.07.1988)', null, false, false, null, 'disabled', 'disabled', 'disabled', 'disabled', null)
         ];
         var persons = [
-            new __WEBPACK_IMPORTED_MODULE_1__models_model_person__["a" /* PersonModel */]('Ba01', 'Muster, Andi(23.06.1958)', '18.12.2017 12:20:00', 'Muster, Rosa, Roter Einzahlungsschein Post', '45-5111-5'),
-            new __WEBPACK_IMPORTED_MODULE_1__models_model_person__["a" /* PersonModel */]('Ba02', 'Muster, Rosa(09.10.1978)', '18.12.2017 12:20:00', 'Muster, Rosa, Roter Einzahlungsschein Post', '45-5111-5'),
-            new __WEBPACK_IMPORTED_MODULE_1__models_model_person__["a" /* PersonModel */]('Ba03', 'Muster, Lea(11.07.1988)', '18.12.2017 12:20:00', 'Muster, Rosa, Roter Einzahlungsschein Post', '45-5111-6')
+            new __WEBPACK_IMPORTED_MODULE_1__models_model_person__["a" /* PersonModel */]('Ba01', 'Muster, Andi(23.06.1958)', '18.12.2017', 'Muster, Rosa, Roter Einzahlungsschein Post', '45-5111-5'),
+            new __WEBPACK_IMPORTED_MODULE_1__models_model_person__["a" /* PersonModel */]('Ba02', 'Muster, Rosa(09.10.1978)', '18.12.2017', 'Muster, Rosa, Roter Einzahlungsschein Post', '45-5111-5'),
+            new __WEBPACK_IMPORTED_MODULE_1__models_model_person__["a" /* PersonModel */]('Ba03', 'Muster, Lea(11.07.1988)', '18.12.2017', 'Muster, Rosa, Roter Einzahlungsschein Post', '45-5111-6')
         ];
         var treemenus = [
             new __WEBPACK_IMPORTED_MODULE_0__models_model_tree_menu__["a" /* TreeMenuModel */]('401', 'Alimente'),
